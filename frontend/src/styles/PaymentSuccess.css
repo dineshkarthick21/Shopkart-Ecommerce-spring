@@ -1,6 +1,6 @@
 .payment-success-container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #f1f3f6;
 }
 
 .success-content {
@@ -151,8 +151,10 @@
   gap: 15px;
   justify-content: center;
   margin-bottom: 25px;
+  flex-wrap: wrap;
 }
 
+.download-pdf-btn,
 .home-btn,
 .courses-btn {
   padding: 15px 30px;
@@ -162,6 +164,17 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s;
+}
+
+.download-pdf-btn {
+  background: #fb641b;
+  color: white;
+}
+
+.download-pdf-btn:hover {
+  background: #e85c0d;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(251, 100, 27, 0.3);
 }
 
 .home-btn {
@@ -208,6 +221,7 @@
     flex-direction: column;
   }
 
+  .download-pdf-btn,
   .home-btn,
   .courses-btn {
     width: 100%;

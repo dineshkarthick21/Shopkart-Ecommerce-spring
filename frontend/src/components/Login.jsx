@@ -78,50 +78,57 @@ const Login = ({ onLogin }) => {
 
   return (
     <div className="login-container">
-      <div className="login-wrapper">
-        <div className="login-card">
-          <div className="login-header">
-            <div className="logo-icon">🎓</div>
-            <h1>Course Registration System</h1>
-            <p>Sign in to continue</p>
+      <div className="login-box">
+        {/* Left Panel - Branding */}
+        <div className="login-left">
+          <h1>ShopKart</h1>
+          <p className="tagline">Your one-stop shopping destination</p>
+          <div className="benefits">
+            <div className="benefit-item">
+              <span className="benefit-icon">🎯</span>
+              <p>Wide Range of Products</p>
+            </div>
+            <div className="benefit-item">
+              <span className="benefit-icon">⚡</span>
+              <p>Fast & Secure Checkout</p>
+            </div>
+            <div className="benefit-item">
+              <span className="benefit-icon">🎁</span>
+              <p>Exclusive Deals & Offers</p>
+            </div>
           </div>
+        </div>
 
+        {/* Right Panel - Login Form */}
+        <div className="login-right">
           <form onSubmit={handleSubmit} className="login-form">
             {error && (
               <div className="error-message">
-                <span>⚠️</span> {error}
+                {error}
               </div>
             )}
 
             <div className="form-group">
-              <label htmlFor="username">
-                <span className="icon">👤</span>
-                Username
-              </label>
               <input
                 type="text"
                 id="username"
                 name="username"
                 value={formData.username}
                 onChange={handleChange}
-                placeholder="Enter your username"
+                placeholder="Enter Username"
                 autoComplete="username"
                 required
               />
             </div>
 
             <div className="form-group">
-              <label htmlFor="password">
-                <span className="icon">🔒</span>
-                Password
-              </label>
               <input
                 type="password"
                 id="password"
                 name="password"
                 value={formData.password}
                 onChange={handleChange}
-                placeholder="Enter your password"
+                placeholder="Enter Password"
                 autoComplete="current-password"
                 required
               />
@@ -132,31 +139,14 @@ const Login = ({ onLogin }) => {
               className="login-btn"
               disabled={loading}
             >
-              {loading ? (
-                <>
-                  <span className="spinner"></span>
-                  Signing in...
-                </>
-              ) : (
-                'Sign In'
-              )}
+              {loading ? 'Please wait...' : 'Login'}
             </button>
           </form>
 
-          <div className="login-footer">
-            <div className="demo-credentials">
-              <h4>Demo Credentials:</h4>
-              <div className="credentials-box">
-                <p><strong>Admin:</strong> admin / admin123</p>
-                <p><strong>User:</strong> user / user123</p>
-              </div>
-            </div>
-            <div className="signup-link-container">
-              <p>
-                Don't have an account?{' '}
-                <Link to="/signup" className="signup-link">Create Account</Link>
-              </p>
-            </div>
+          <div className="signup-section">
+            <Link to="/signup" className="signup-link">
+              New to ShopKart? Create an account
+            </Link>
           </div>
         </div>
       </div>

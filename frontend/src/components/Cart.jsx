@@ -67,9 +67,9 @@ const Cart = () => {
           <div className="empty-cart">
             <div className="empty-icon">🛒</div>
             <h2>Your cart is empty</h2>
-            <p>Add some courses to get started!</p>
+            <p>Add some products to get started!</p>
             <button className="shop-btn" onClick={() => navigate('/available-courses')}>
-              Browse Courses
+              Browse Products
             </button>
           </div>
         ) : (
@@ -81,8 +81,8 @@ const Cart = () => {
                   
                   <div className="item-details">
                     <h3>{item.courseName}</h3>
-                    <p className="trainer">👨‍🏫 {item.trainer}</p>
-                    <p className="duration">⏱️ {item.durationInWeeks} weeks</p>
+                    <p className="trainer">🏷️ {item.trainer}</p>
+                    <p className="duration">⭐ Premium Quality</p>
                   </div>
 
                   <div className="quantity-control">

@@ -25,8 +25,8 @@ const AvailableCourses = () => {
       });
       setCourses(response.data);
     } catch (error) {
-      setError('Failed to load courses. Please try again.');
-      console.error('Error fetching courses:', error);
+      setError('Failed to load products. Please try again.');
+      console.error('Error fetching products:', error);
     } finally {
       setLoading(false);
     }
@@ -72,9 +72,10 @@ const AvailableCourses = () => {
           </button>
         </div>
 
-        <h2 className="page-title">🛍️ Browse Courses</h2>
+        <h2 className="page-title">🛍️ All Products</h2>
+        <p className="page-subtitle">Discover our amazing collection of products</p>
 
-        {loading && <div className="loading">Loading courses...</div>}
+        {loading && <div className="loading">Loading products...</div>}
         
         {error && <div className="error-message">{error}</div>}
         
@@ -85,20 +86,20 @@ const AvailableCourses = () => {
                 <div key={course.courseId} className="course-card">
                   <div className="course-image">
                     <img 
-                      src={course.photoUrl || 'https://via.placeholder.com/300x200?text=Course'} 
+                      src={course.photoUrl || 'https://via.placeholder.com/300x200?text=Product'} 
                       alt={course.courseName}
                     />
                   </div>
                   
                   <div className="course-details">
                     <h3 className="course-title">{course.courseName}</h3>
-                    <p className="course-trainer">👨‍🏫 By {course.trainer}</p>
+                    <p className="course-trainer">🏷️ {course.trainer}</p>
                     <p className="course-description">
-                      {course.description || 'Learn and master this course with expert guidance.'}
+                      {course.description || 'High quality product with great features.'}
                     </p>
                     
                     <div className="course-info">
-                      <span className="duration">⏱️ {course.durationInWeeks} weeks</span>
+                      <span className="duration">⭐ {course.durationInWeeks || 4.5}/5 Rating</span>
                     </div>
                     
                     <div className="course-footer">
@@ -117,7 +118,7 @@ const AvailableCourses = () => {
               ))
             ) : (
               <div className="no-courses">
-                <p>No courses available at the moment.</p>
+                <p>No products available at the moment.</p>
               </div>
             )}
           </div>

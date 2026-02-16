@@ -1,0 +1,602 @@
+[
+  {
+    "courseName": "Samsung 32 inch HD Smart LED TV",
+    "trainer": "Samsung",
+    "durationInWeeks": 4.5,
+    "price": 14999,
+    "description": "HD Ready Smart LED TV with built-in WiFi, Screen Mirroring, and OTT apps support",
+    "photoUrl": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=500"
+  },
+  {
+    "courseName": "LG 43 inch 4K Ultra HD Smart LED TV",
+    "trainer": "LG",
+    "durationInWeeks": 4.7,
+    "price": 32999,
+    "description": "4K Ultra HD resolution with WebOS, Magic Remote, and AI ThinQ",
+    "photoUrl": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=500"
+  },
+  {
+    "courseName": "Sony Bravia 55 inch 4K Android TV",
+    "trainer": "Sony",
+    "durationInWeeks": 4.8,
+    "price": 54990,
+    "description": "4K HDR Android TV with Google Assistant and Chromecast built-in",
+    "photoUrl": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=500"
+  },
+  {
+    "courseName": "Mi 50 inch 4K Ultra HD Smart Android TV",
+    "trainer": "Xiaomi",
+    "durationInWeeks": 4.6,
+    "price": 29999,
+    "description": "4K Ultra HD with Dolby Vision, Android TV 9.0, and PatchWall",
+    "photoUrl": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=500"
+  },
+  {
+    "courseName": "OnePlus 65 inch 4K QLED Smart TV",
+    "trainer": "OnePlus",
+    "durationInWeeks": 4.9,
+    "price": 64999,
+    "description": "QLED 4K TV with Dolby Atmos, Android TV, and Gamma Engine",
+    "photoUrl": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=500"
+  },
+  {
+    "courseName": "LG 260L Frost Free Refrigerator",
+    "trainer": "LG",
+    "durationInWeeks": 4.4,
+    "price": 21990,
+    "description": "Frost Free Double Door Refrigerator with Smart Inverter Compressor",
+    "photoUrl": "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=500"
+  },
+  {
+    "courseName": "Samsung 324L Convertible Refrigerator",
+    "trainer": "Samsung",
+    "durationInWeeks": 4.6,
+    "price": 29990,
+    "description": "Convertible 5-in-1 with Digital Inverter Technology",
+    "photoUrl": "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=500"
+  },
+  {
+    "courseName": "Whirlpool 265L Multi-Door Refrigerator",
+    "trainer": "Whirlpool",
+    "durationInWeeks": 4.5,
+    "price": 24990,
+    "description": "Frost Free with 6th Sense DeepFreeze Technology",
+    "photoUrl": "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=500"
+  },
+  {
+    "courseName": "Haier 345L Side by Side Refrigerator",
+    "trainer": "Haier",
+    "durationInWeeks": 4.3,
+    "price": 38990,
+    "description": "Side by Side with Inverter Technology and Twin Inverter",
+    "photoUrl": "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=500"
+  },
+  {
+    "courseName": "Godrej 190L Single Door Refrigerator",
+    "trainer": "Godrej",
+    "durationInWeeks": 4.2,
+    "price": 12990,
+    "description": "Direct Cool with Aqua Space and Large Vegetable Tray",
+    "photoUrl": "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=500"
+  },
+  {
+    "courseName": "IFB 25L Convection Microwave Oven",
+    "trainer": "IFB",
+    "durationInWeeks": 4.4,
+    "price": 9990,
+    "description": "Convection Microwave with 71 Auto Cook Menus",
+    "photoUrl": "https://images.unsplash.com/photo-1585659722983-3a675dabf23d?w=500"
+  },
+  {
+    "courseName": "Samsung 28L Convection Microwave",
+    "trainer": "Samsung",
+    "durationInWeeks": 4.5,
+    "price": 11990,
+    "description": "Convection with Crusty Plate and Slim Fry Technology",
+    "photoUrl": "https://images.unsplash.com/photo-1585659722983-3a675dabf23d?w=500"
+  },
+  {
+    "courseName": "LG 32L Charcoal Convection Microwave",
+    "trainer": "LG",
+    "durationInWeeks": 4.6,
+    "price": 14990,
+    "description": "Charcoal Lighting Heater with 360° Motorised Rotisserie",
+    "photoUrl": "https://images.unsplash.com/photo-1585659722983-3a675dabf23d?w=500"
+  },
+  {
+    "courseName": "Panasonic 23L Solo Microwave Oven",
+    "trainer": "Panasonic",
+    "durationInWeeks": 4.3,
+    "price": 6490,
+    "description": "Solo Microwave with 51 Auto Cook Menus",
+    "photoUrl": "https://images.unsplash.com/photo-1585659722983-3a675dabf23d?w=500"
+  },
+  {
+    "courseName": "Bajaj 20L Grill Microwave Oven",
+    "trainer": "Bajaj",
+    "durationInWeeks": 4.2,
+    "price": 5990,
+    "description": "Grill Microwave with Jog Dial Control",
+    "photoUrl": "https://images.unsplash.com/photo-1585659722983-3a675dabf23d?w=500"
+  },
+  {
+    "courseName": "Philips HL7756 750W Mixer Grinder",
+    "trainer": "Philips",
+    "durationInWeeks": 4.5,
+    "price": 4999,
+    "description": "Mixer Grinder with 3 Jars and Nutri Fresh Technology",
+    "photoUrl": "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=500"
+  },
+  {
+    "courseName": "Bajaj Rex 500W Mixer Grinder",
+    "trainer": "Bajaj",
+    "durationInWeeks": 4.3,
+    "price": 2499,
+    "description": "3 Jars Mixer Grinder with Multi-Purpose Blade",
+    "photoUrl": "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=500"
+  },
+  {
+    "courseName": "Preethi Blue Leaf 750W Mixer Grinder",
+    "trainer": "Preethi",
+    "durationInWeeks": 4.6,
+    "price": 5990,
+    "description": "Platinum Package with 3 Jars and Master Chef Jar",
+    "photoUrl": "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=500"
+  },
+  {
+    "courseName": "Butterfly Jet Elite 750W Mixer",
+    "trainer": "Butterfly",
+    "durationInWeeks": 4.4,
+    "price": 3499,
+    "description": "4 Jar Mixer Grinder with Nutri-Max Blade",
+    "photoUrl": "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=500"
+  },
+  {
+    "courseName": "Power Guard 500W Mixer Grinder",
+    "trainer": "Power Guard",
+    "durationInWeeks": 4.2,
+    "price": 1999,
+    "description": "3 Stainless Steel Jars with ABS Body",
+    "photoUrl": "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=500"
+  },
+  {
+    "courseName": "Prestige PIC 20 1600W Induction Cooktop",
+    "trainer": "Prestige",
+    "durationInWeeks": 4.5,
+    "price": 2199,
+    "description": "Push Button Induction with Anti-Magnetic Wall",
+    "photoUrl": "https://images.unsplash.com/photo-1585515320310-259814833150?w=500"
+  },
+  {
+    "courseName": "Philips HD4928 2100W Induction Stove",
+    "trainer": "Philips",
+    "durationInWeeks": 4.6,
+    "price": 3299,
+    "description": "Touch Panel Induction with 10 Power Levels",
+    "photoUrl": "https://images.unsplash.com/photo-1585515320310-259814833150?w=500"
+  },
+  {
+    "courseName": "Bajaj ICX Neo 1600W Induction",
+    "trainer": "Bajaj",
+    "durationInWeeks": 4.4,
+    "price": 1899,
+    "description": "LED Display with 7 Preset Menu Options",
+    "photoUrl": "https://images.unsplash.com/photo-1585515320310-259814833150?w=500"
+  },
+  {
+    "courseName": "Havells Insta Cook PT 1600W",
+    "trainer": "Havells",
+    "durationInWeeks": 4.3,
+    "price": 2499,
+    "description": "Feather Touch Button Panel with Auto Shut Off",
+    "photoUrl": "https://images.unsplash.com/photo-1585515320310-259814833150?w=500"
+  },
+  {
+    "courseName": "iBell 2000W Induction Cooktop",
+    "trainer": "iBell",
+    "durationInWeeks": 4.2,
+    "price": 1599,
+    "description": "Touch Control with Timer and 8 Power Levels",
+    "photoUrl": "https://images.unsplash.com/photo-1585515320310-259814833150?w=500"
+  },
+  {
+    "courseName": "Prestige Electric Kettle 1.5L",
+    "trainer": "Prestige",
+    "durationInWeeks": 4.4,
+    "price": 899,
+    "description": "1500W with Auto Shut-Off and Boil Dry Protection",
+    "photoUrl": "https://images.unsplash.com/photo-1563473213013-de2a0133c100?w=500"
+  },
+  {
+    "courseName": "Philips HD9306 1.5L Electric Kettle",
+    "trainer": "Philips",
+    "durationInWeeks": 4.5,
+    "price": 1399,
+    "description": "Stainless Steel with 360° Rotational Base",
+    "photoUrl": "https://images.unsplash.com/photo-1563473213013-de2a0133c100?w=500"
+  },
+  {
+    "courseName": "Butterfly EKN 1.2L Electric Kettle",
+    "trainer": "Butterfly",
+    "durationInWeeks": 4.3,
+    "price": 699,
+    "description": "1350W with Concealed Element and Auto Cut-Off",
+    "photoUrl": "https://images.unsplash.com/photo-1563473213013-de2a0133c100?w=500"
+  },
+  {
+    "courseName": "Bajaj Majesty 1.7L Electric Kettle",
+    "trainer": "Bajaj",
+    "durationInWeeks": 4.2,
+    "price": 849,
+    "description": "1850W with Stainless Steel Body",
+    "photoUrl": "https://images.unsplash.com/photo-1563473213013-de2a0133c100?w=500"
+  },
+  {
+    "courseName": "Kent 1.8L Electric Kettle",
+    "trainer": "Kent",
+    "durationInWeeks": 4.4,
+    "price": 1599,
+    "description": "1500W with LED Indicator and Double Wall",
+    "photoUrl": "https://images.unsplash.com/photo-1563473213013-de2a0133c100?w=500"
+  },
+  {
+    "courseName": "Philips HD2582 830W Pop-Up Toaster",
+    "trainer": "Philips",
+    "durationInWeeks": 4.3,
+    "price": 1899,
+    "description": "2 Slice with 7 Browning Settings and Crumb Tray",
+    "photoUrl": "https://images.unsplash.com/photo-1580913428706-c311e67898b3?w=500"
+  },
+  {
+    "courseName": "Prestige PPTPD 4 Slice Toaster",
+    "trainer": "Prestige",
+    "durationInWeeks": 4.4,
+    "price": 2499,
+    "description": "4 Slice Pop-Up Toaster with Variable Browning",
+    "photoUrl": "https://images.unsplash.com/photo-1580913428706-c311e67898b3?w=500"
+  },
+  {
+    "courseName": "Morphy Richards 650W Toaster",
+    "trainer": "Morphy Richards",
+    "durationInWeeks": 4.5,
+    "price": 2199,
+    "description": "2 Slice with Auto Pop-Up and Reheat Function",
+    "photoUrl": "https://images.unsplash.com/photo-1580913428706-c311e67898b3?w=500"
+  },
+  {
+    "courseName": "Bajaj ATX 4 Auto Pop-Up Toaster",
+    "trainer": "Bajaj",
+    "durationInWeeks": 4.2,
+    "price": 899,
+    "description": "2 Slice with Mid-Cycle Cancel and Dust Cover",
+    "photoUrl": "https://images.unsplash.com/photo-1580913428706-c311e67898b3?w=500"
+  },
+  {
+    "courseName": "Pigeon 800W 2 Slice Toaster",
+    "trainer": "Pigeon",
+    "durationInWeeks": 4.1,
+    "price": 699,
+    "description": "Pop-Up Toaster with Warming Rack",
+    "photoUrl": "https://images.unsplash.com/photo-1580913428706-c311e67898b3?w=500"
+  },
+  {
+    "courseName": "Panasonic SR-WA18 1.8L Rice Cooker",
+    "trainer": "Panasonic",
+    "durationInWeeks": 4.4,
+    "price": 2999,
+    "description": "Automatic Cooker with Non-Stick Pan",
+    "photoUrl": "https://images.unsplash.com/photo-1587137451669-0318d0d5c9c0?w=500"
+  },
+  {
+    "courseName": "Prestige Delight 1.8L Rice Cooker",
+    "trainer": "Prestige",
+    "durationInWeeks": 4.3,
+    "price": 1999,
+    "description": "Electric Rice Cooker with Keep Warm Function",
+    "photoUrl": "https://images.unsplash.com/photo-1587137451669-0318d0d5c9c0?w=500"
+  },
+  {
+    "courseName": "Philips HD4515 1L Rice Cooker",
+    "trainer": "Philips",
+    "durationInWeeks": 4.2,
+    "price": 1499,
+    "description": "Automatic with Anodized Aluminum Pan",
+    "photoUrl": "https://images.unsplash.com/photo-1587137451669-0318d0d5c9c0?w=500"
+  },
+  {
+    "courseName": "Butterfly KRC-22 2.8L Rice Cooker",
+    "trainer": "Butterfly",
+    "durationInWeeks": 4.1,
+    "price": 1799,
+    "description": "Cylindrical Shape with Single Touch Operation",
+    "photoUrl": "https://images.unsplash.com/photo-1587137451669-0318d0d5c9c0?w=500"
+  },
+  {
+    "courseName": "Bajaj Majesty RCX 1.8L Cooker",
+    "trainer": "Bajaj",
+    "durationInWeeks": 4.0,
+    "price": 1299,
+    "description": "Multi-Cook with Steaming Basket",
+    "photoUrl": "https://images.unsplash.com/photo-1587137451669-0318d0d5c9c0?w=500"
+  },
+  {
+    "courseName": "LG 8 Kg Washing Machine Front Load",
+    "trainer": "LG",
+    "durationInWeeks": 4.6,
+    "price": 32990,
+    "description": "AI Direct Drive with Steam Wash and WiFi",
+    "photoUrl": "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=500"
+  },
+  {
+    "courseName": "Samsung 7 Kg Fully Automatic Top Load",
+    "trainer": "Samsung",
+    "durationInWeeks": 4.5,
+    "price": 18990,
+    "description": "Ecobubble with Digital Inverter Motor",
+    "photoUrl": "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=500"
+  },
+  {
+    "courseName": "Whirlpool 6.5 Kg Semi-Automatic",
+    "trainer": "Whirlpool",
+    "durationInWeeks": 4.3,
+    "price": 9990,
+    "description": "Ace Supersoak with Spa Wash System",
+    "photoUrl": "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=500"
+  },
+  {
+    "courseName": "Bosch 7 Kg Front Load Washing",
+    "trainer": "Bosch",
+    "durationInWeeks": 4.7,
+    "price": 29990,
+    "description": "VarioDrum with ActiveWater Plus",
+    "photoUrl": "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=500"
+  },
+  {
+    "courseName": "IFB 6 Kg Fully Automatic Front Load",
+    "trainer": "IFB",
+    "durationInWeeks": 4.4,
+    "price": 24990,
+    "description": "Aqua Energie with Crescent Moon Drum",
+    "photoUrl": "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=500"
+  },
+  {
+    "courseName": "Eureka Forbes Supervac 1400W Vacuum",
+    "trainer": "Eureka Forbes",
+    "durationInWeeks": 4.4,
+    "price": 4999,
+    "description": "Dry Vacuum Cleaner with Reusable Dust Bag",
+    "photoUrl": "https://images.unsplash.com/photo-1558317374-067fb6f205c6?w=500"
+  },
+  {
+    "courseName": "Kent Force Cyclonic 2000W Vacuum",
+    "trainer": "Kent",
+    "durationInWeeks": 4.5,
+    "price": 6999,
+    "description": "Cyclonic Technology with HEPA Filter",
+    "photoUrl": "https://images.unsplash.com/photo-1558317374-067fb6f205c6?w=500"
+  },
+  {
+    "courseName": "Philips PowerPro 1800W Vacuum",
+    "trainer": "Philips",
+    "durationInWeeks": 4.6,
+    "price": 8499,
+    "description": "Compact Bagless with TriActive+ Nozzle",
+    "photoUrl": "https://images.unsplash.com/photo-1558317374-067fb6f205c6?w=500"
+  },
+  {
+    "courseName": "Black+Decker 1000W Handheld Vacuum",
+    "trainer": "Black+Decker",
+    "durationInWeeks": 4.2,
+    "price": 2999,
+    "description": "Portable with Washable Bowl and Filter",
+    "photoUrl": "https://images.unsplash.com/photo-1558317374-067fb6f205c6?w=500"
+  },
+  {
+    "courseName": "Inalsa Vacuum Cleaner Wet & Dry",
+    "trainer": "Inalsa",
+    "durationInWeeks": 4.3,
+    "price": 3999,
+    "description": "1400W with Blower Function",
+    "photoUrl": "https://images.unsplash.com/photo-1558317374-067fb6f205c6?w=500"
+  },
+  {
+    "courseName": "Philips GC1905 1440W Steam Iron",
+    "trainer": "Philips",
+    "durationInWeeks": 4.4,
+    "price": 1299,
+    "description": "Non-Stick Soleplate with Continuous Steam",
+    "photoUrl": "https://images.unsplash.com/photo-1580917387890-33d87d6ac16d?w=500"
+  },
+  {
+    "courseName": "Bajaj Majesty MX 35 1000W Iron",
+    "trainer": "Bajaj",
+    "durationInWeeks": 4.2,
+    "price": 799,
+    "description": "Steam Iron with Anti-Drip Function",
+    "photoUrl": "https://images.unsplash.com/photo-1580917387890-33d87d6ac16d?w=500"
+  },
+  {
+    "courseName": "Morphy Richards 2000W Steam Iron",
+    "trainer": "Morphy Richards",
+    "durationInWeeks": 4.5,
+    "price": 1999,
+    "description": "Glide Soleplate with Spray Function",
+    "photoUrl": "https://images.unsplash.com/photo-1580917387890-33d87d6ac16d?w=500"
+  },
+  {
+    "courseName": "Usha SI 3816 1800W Steam Iron",
+    "trainer": "Usha",
+    "durationInWeeks": 4.3,
+    "price": 1499,
+    "description": "American Heritage with Self-Cleaning",
+    "photoUrl": "https://images.unsplash.com/photo-1580917387890-33d87d6ac16d?w=500"
+  },
+  {
+    "courseName": "Prestige PSI 1.0 1000W Dry Iron",
+    "trainer": "Prestige",
+    "durationInWeeks": 4.1,
+    "price": 599,
+    "description": "Non-Stick Soleplate with Thermal Fuse",
+    "photoUrl": "https://images.unsplash.com/photo-1580917387890-33d87d6ac16d?w=500"
+  },
+  {
+    "courseName": "LG 1.5 Ton 5 Star Inverter AC",
+    "trainer": "LG",
+    "durationInWeeks": 4.7,
+    "price": 37990,
+    "description": "Dual Inverter with 4-Way Swing and WiFi",
+    "photoUrl": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=500"
+  },
+  {
+    "courseName": "Daikin 1 Ton 3 Star Split AC",
+    "trainer": "Daikin",
+    "durationInWeeks": 4.6,
+    "price": 29990,
+    "description": "Neo Swing Compressor with Power Chill",
+    "photoUrl": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=500"
+  },
+  {
+    "courseName": "Blue Star 1.5 Ton 4 Star AC",
+    "trainer": "Blue Star",
+    "durationInWeeks": 4.5,
+    "price": 32990,
+    "description": "Precision Cooling with Turbo Cool Mode",
+    "photoUrl": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=500"
+  },
+  {
+    "courseName": "Voltas 1.2 Ton 3 Star Window AC",
+    "trainer": "Voltas",
+    "durationInWeeks": 4.4,
+    "price": 24990,
+    "description": "Fixed Speed with Multi-Stage Filtration",
+    "photoUrl": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=500"
+  },
+  {
+    "courseName": "Carrier 2 Ton 3 Star Split AC",
+    "trainer": "Carrier",
+    "durationInWeeks": 4.6,
+    "price": 42990,
+    "description": "Hybrid Jet with Auto Clean Technology",
+    "photoUrl": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=500"
+  },
+  {
+    "courseName": "Symphony Diet 3D 30L Air Cooler",
+    "trainer": "Symphony",
+    "durationInWeeks": 4.3,
+    "price": 7499,
+    "description": "Desert Cooler with i-Pure Technology",
+    "photoUrl": "https://images.unsplash.com/photo-1597200381847-30ec200eeb9a?w=500"
+  },
+  {
+    "courseName": "Bajaj DC 2016 67L Desert Cooler",
+    "trainer": "Bajaj",
+    "durationInWeeks": 4.4,
+    "price": 9990,
+    "description": "DuraMaxx Pump with Ice Chamber",
+    "photoUrl": "https://images.unsplash.com/photo-1597200381847-30ec200eeb9a?w=500"
+  },
+  {
+    "courseName": "Orient Electric 50L Desert Cooler",
+    "trainer": "Orient Electric",
+    "durationInWeeks": 4.2,
+    "price": 8499,
+    "description": "Smartcool with Inverter Compatible Motor",
+    "photoUrl": "https://images.unsplash.com/photo-1597200381847-30ec200eeb9a?w=500"
+  },
+  {
+    "courseName": "Crompton 55L Personal Air Cooler",
+    "trainer": "Crompton",
+    "durationInWeeks": 4.1,
+    "price": 6999,
+    "description": "Honeycomb Pads with 4-Way Air Deflection",
+    "photoUrl": "https://images.unsplash.com/photo-1597200381847-30ec200eeb9a?w=500"
+  },
+  {
+    "courseName": "Kenstar 40L Desert Cooler",
+    "trainer": "Kenstar",
+    "durationInWeeks": 4.0,
+    "price": 5999,
+    "description": "TurboFan Technology with Mosquito Net",
+    "photoUrl": "https://images.unsplash.com/photo-1597200381847-30ec200eeb9a?w=500"
+  },
+  {
+    "courseName": "Havells Leganza 1200mm Ceiling Fan",
+    "trainer": "Havells",
+    "durationInWeeks": 4.5,
+    "price": 2499,
+    "description": "High Speed with Anti-Dust Technology",
+    "photoUrl": "https://images.unsplash.com/photo-1607400201893-e5c5f0ab2a0c?w=500"
+  },
+  {
+    "courseName": "Usha Technix 1200mm Premium Fan",
+    "trainer": "Usha",
+    "durationInWeeks": 4.4,
+    "price": 1999,
+    "description": "Aeroquiet Technology with Rust Proof",
+    "photoUrl": "https://images.unsplash.com/photo-1607400201893-e5c5f0ab2a0c?w=500"
+  },
+  {
+    "courseName": "Orient Electric 1200mm BLDC Fan",
+    "trainer": "Orient Electric",
+    "durationInWeeks": 4.6,
+    "price": 3499,
+    "description": "Energy Saving with Remote Control",
+    "photoUrl": "https://images.unsplash.com/photo-1607400201893-e5c5f0ab2a0c?w=500"
+  },
+  {
+    "courseName": "Crompton Hill Briz 1200mm Fan",
+    "trainer": "Crompton",
+    "durationInWeeks": 4.3,
+    "price": 1799,
+    "description": "High Air Delivery with Elegant Design",
+    "photoUrl": "https://images.unsplash.com/photo-1607400201893-e5c5f0ab2a0c?w=500"
+  },
+  {
+    "courseName": "Bajaj Regal Gold 1200mm Fan",
+    "trainer": "Bajaj",
+    "durationInWeeks": 4.2,
+    "price": 1599,
+    "description": "Aerodynamic Blades with Rust Free",
+    "photoUrl": "https://images.unsplash.com/photo-1607400201893-e5c5f0ab2a0c?w=500"
+  },
+  {
+    "courseName": "Racold Eterno Pro 25L Water Heater",
+    "trainer": "Racold",
+    "durationInWeeks": 4.5,
+    "price": 8990,
+    "description": "Titanium Plus Tank with Smart Bath Logic",
+    "photoUrl": "https://images.unsplash.com/photo-1581858707068-e5e93f7e828e?w=500"
+  },
+  {
+    "courseName": "Bajaj New Shakti 15L Geyser",
+    "trainer": "Bajaj",
+    "durationInWeeks": 4.3,
+    "price": 6499,
+    "description": "Glass Lined Tank with Multi-Function Valve",
+    "photoUrl": "https://images.unsplash.com/photo-1581858707068-e5e93f7e828e?w=500"
+  },
+  {
+    "courseName": "AO Smith 25L Storage Water Heater",
+    "trainer": "AO Smith",
+    "durationInWeeks": 4.7,
+    "price": 11990,
+    "description": "Blue Diamond with BEE 5 Star Rating",
+    "photoUrl": "https://images.unsplash.com/photo-1581858707068-e5e93f7e828e?w=500"
+  },
+  {
+    "courseName": "Havells Instanio 3L Instant Geyser",
+    "trainer": "Havells",
+    "durationInWeeks": 4.4,
+    "price": 5499,
+    "description": "Vertical Mounting with Color Changing Ring",
+    "photoUrl": "https://images.unsplash.com/photo-1581858707068-e5e93f7e828e?w=500"
+  },
+  {
+    "courseName": "V-Guard Victo 10L Water Heater",
+    "trainer": "V-Guard",
+    "durationInWeeks": 4.2,
+    "price": 4999,
+    "description": "Vitreous Enamel Coating with Incoloy Heating",
+    "photoUrl": "https://images.unsplash.com/photo-1581858707068-e5e93f7e828e?w=500"
+  }
+]

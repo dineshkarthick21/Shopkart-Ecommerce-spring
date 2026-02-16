@@ -54,8 +54,14 @@
 .page-title {
   font-size: 2em;
   color: #212121;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-weight: 600;
+}
+
+.page-subtitle {
+  font-size: 1em;
+  color: #878787;
+  margin-bottom: 30px;
 }
 
 .loading {

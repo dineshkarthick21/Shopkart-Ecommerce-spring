@@ -94,91 +94,92 @@ const SignUp = () => {
 
   return (
     <div className="signup-container">
-      <div className="signup-wrapper">
-        <div className="signup-card">
-          <div className="signup-header">
-            <div className="logo-icon">📝</div>
-            <h1>Create Account</h1>
-            <p>Join the Course Registration System</p>
+      <div className="signup-box">
+        {/* Left Panel - Branding */}
+        <div className="signup-left">
+          <h1>ShopKart</h1>
+          <p className="tagline">Start your shopping journey today</p>
+          <div className="benefits">
+            <div className="benefit-item">
+              <span className="benefit-icon">🛍️</span>
+              <p>Access to Thousands of Products</p>
+            </div>
+            <div className="benefit-item">
+              <span className="benefit-icon">💳</span>
+              <p>Secure Payment Options</p>
+            </div>
+            <div className="benefit-item">
+              <span className="benefit-icon">🚚</span>
+              <p>Fast & Free Delivery</p>
+            </div>
           </div>
+        </div>
 
+        {/* Right Panel - SignUp Form */}
+        <div className="signup-right">
           <form onSubmit={handleSubmit} className="signup-form">
+            <h2 className="form-title">Create Account</h2>
+            
             {error && (
               <div className="error-message">
-                <span>⚠️</span> {error}
+                {error}
               </div>
             )}
 
             {success && (
               <div className="success-message">
-                <span>✅</span> {success}
+                {success}
               </div>
             )}
 
             <div className="form-group">
-              <label htmlFor="username">
-                <span className="icon">👤</span>
-                Username
-              </label>
               <input
                 type="text"
                 id="username"
                 name="username"
                 value={formData.username}
                 onChange={handleChange}
-                placeholder="Choose a username"
+                placeholder="Enter Username"
                 autoComplete="username"
                 required
               />
             </div>
 
             <div className="form-group">
-              <label htmlFor="password">
-                <span className="icon">🔒</span>
-                Password
-              </label>
               <input
                 type="password"
                 id="password"
                 name="password"
                 value={formData.password}
                 onChange={handleChange}
-                placeholder="Create a password (min 6 characters)"
+                placeholder="Enter Password (min 6 characters)"
                 autoComplete="new-password"
                 required
               />
             </div>
 
             <div className="form-group">
-              <label htmlFor="confirmPassword">
-                <span className="icon">🔐</span>
-                Confirm Password
-              </label>
               <input
                 type="password"
                 id="confirmPassword"
                 name="confirmPassword"
                 value={formData.confirmPassword}
                 onChange={handleChange}
-                placeholder="Confirm your password"
+                placeholder="Confirm Password"
                 autoComplete="new-password"
                 required
               />
             </div>
 
             <div className="form-group">
-              <label htmlFor="role">
-                <span className="icon">🎭</span>
-                Account Type
-              </label>
               <select
                 id="role"
                 name="role"
                 value={formData.role}
                 onChange={handleChange}
               >
-                <option value="USER">Student</option>
-                <option value="ADMIN">Administrator</option>
+                <option value="USER">Student Account</option>
+                <option value="ADMIN">Administrator Account</option>
               </select>
             </div>
 
@@ -187,22 +188,14 @@ const SignUp = () => {
               className="signup-btn"
               disabled={loading}
             >
-              {loading ? (
-                <>
-                  <span className="spinner"></span>
-                  Creating Account...
-                </>
-              ) : (
-                'Create Account'
-              )}
+              {loading ? 'Creating Account...' : 'Sign Up'}
             </button>
           </form>
 
-          <div className="signup-footer">
-            <p>
-              Already have an account?{' '}
-              <Link to="/login" className="login-link">Sign In</Link>
-            </p>
+          <div className="login-section">
+            <Link to="/login" className="login-link">
+              Existing User? Log in
+            </Link>
           </div>
         </div>
       </div>

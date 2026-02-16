@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Header from './Header';
+import BulkProductImport from './BulkProductImport';
 import '../styles/AdminCourses.css';
 
 const AdminCourses = () => {
@@ -13,6 +14,8 @@ const AdminCourses = () => {
     description: '',
     price: ''
   });
+  const [photoFile, setPhotoFile] = useState(null);
+  const [photoPreview, setPhotoPreview] = useState('');
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState({ type: '', text: '' });
 
@@ -36,14 +39,39 @@ const AdminCourses = () => {
     });
   };
 
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      setPhotoFile(file);
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setPhotoPreview(reader.result);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
     setMessage({ type: '', text: '' });
 
     try {
+      let imageUrl = formData.photoUrl;
+      
+      // If a file is uploaded, convert to base64 and use as photoUrl
+      if (photoFile) {
+        const reader = new FileReader();
+        imageUrl = await new Promise((resolve, reject) => {
+          reader.onloadend = () => resolve(reader.result);
+          reader.onerror = reject;
+          reader.readAsDataURL(photoFile);
+        });
+      }
+
       await axios.post('http://localhost:8080/admin/courses/add', {
         ...formData,
+        photoUrl: imageUrl,
         durationInWeeks: parseInt(formData.durationInWeeks),
         price: parseFloat(formData.price)
       });
@@ -57,6 +85,8 @@ const AdminCourses = () => {
         description: '',
         price: ''
       });
+      setPhotoFile(null);
+      setPhotoPreview('');
       fetchCourses();
     } catch (error) {
       setMessage({ type: 'error', text: 'Failed to add course' });
@@ -81,7 +111,7 @@ const AdminCourses = () => {
     <div className="admin-courses-container">
       <Header />
       <div className="admin-content">
-        <h1>🎓 Manage Courses</h1>
+        <h1>📦 Manage Products</h1>
 
         {message.text && (
           <div className={`message ${message.type}`}>
@@ -89,12 +119,14 @@ const AdminCourses = () => {
           </div>
         )}
 
+        <BulkProductImport onComplete={fetchCourses} />
+
         <div className="add-course-form">
-          <h2>Add New Course</h2>
+          <h2>Add New Product</h2>
           <form onSubmit={handleSubmit}>
             <div className="form-row">
               <div className="form-group">
-                <label>Course Name *</label>
+                <label>Product Name *</label>
                 <input
                   type="text"
                   name="courseName"
@@ -104,7 +136,7 @@ const AdminCourses = () => {
                 />
               </div>
               <div className="form-group">
-                <label>Trainer *</label>
+                <label>Brand/Seller *</label>
                 <input
                   type="text"
                   name="trainer"
@@ -117,12 +149,15 @@ const AdminCourses = () => {
 
             <div className="form-row">
               <div className="form-group">
-                <label>Duration (Weeks) *</label>
+                <label>Rating (1-5) *</label>
                 <input
                   type="number"
                   name="durationInWeeks"
                   value={formData.durationInWeeks}
                   onChange={handleChange}
+                  min="1"
+                  max="5"
+                  step="0.1"
                   required
                 />
               </div>
@@ -140,15 +175,18 @@ const AdminCourses = () => {
             </div>
 
             <div className="form-group">
-              <label>Photo URL *</label>
+              <label>Product Photo *</label>
               <input
-                type="url"
-                name="photoUrl"
-                value={formData.photoUrl}
-                onChange={handleChange}
-                placeholder="https://example.com/image.jpg"
+                type="file"
+                accept="image/*"
+                onChange={handleFileChange}
                 required
               />
+              {photoPreview && (
+                <div className="photo-preview">
+                  <img src={photoPreview} alt="Preview" />
+                </div>
+              )}
             </div>
 
             <div className="form-group">
@@ -163,23 +201,23 @@ const AdminCourses = () => {
             </div>
 
             <button type="submit" className="add-btn" disabled={loading}>
-              {loading ? 'Adding...' : '➕ Add Course'}
+              {loading ? 'Adding...' : '➕ Add Product'}
             </button>
           </form>
         </div>
 
         <div className="courses-list">
-          <h2>Existing Courses ({courses.length})</h2>
+          <h2>Existing Products ({courses.length})</h2>
           <div className="courses-grid">
             {courses.map((course) => (
               <div key={course.courseId} className="course-card">
                 <img src={course.photoUrl} alt={course.courseName} />
                 <div className="course-info">
                   <h3>{course.courseName}</h3>
-                  <p className="trainer">👨‍🏫 {course.trainer}</p>
+                  <p className="trainer">🏷️ {course.trainer}</p>
                   <p className="description">{course.description}</p>
                   <div className="course-meta">
-                    <span className="duration">⏱️ {course.durationInWeeks} weeks</span>
+                    <span className="duration">⭐ {course.durationInWeeks}/5</span>
                     <span className="price">₹{course.price}</span>
                   </div>
                   <button 

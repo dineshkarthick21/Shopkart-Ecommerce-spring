@@ -14,37 +14,60 @@ const Home = () => {
       <Header />
       
       <main className="main-content">
-        <h2 className="welcome-text">Welcome to Course Registration Portal</h2>
-        
-        <div className="button-grid">
-          <div className="nav-card" onClick={() => navigate('/register')}>
-            <div className="card-icon">📝</div>
-            <h3>Register a Course</h3>
-            <p>Enroll yourself in exciting new courses</p>
-          </div>
-          
-          <div className="nav-card" onClick={() => navigate('/available-courses')}>
-            <div className="card-icon">📚</div>
-            <h3>Available Courses</h3>
-            <p>Browse all available courses</p>
-          </div>
-          
-          {isAdmin && (
-            <div className="nav-card admin-card" onClick={() => navigate('/enrolled-students')}>
-              <div className="card-icon">👥</div>
-              <h3>Enrolled Students</h3>
-              <p>View all enrolled students (Admin Only)</p>
-            </div>
-          )}
+        <div className="hero-section">
+          <h1 className="hero-title">Welcome to ShopKart</h1>
+          <p className="hero-subtitle">Your One-Stop Online Shopping Destination</p>
         </div>
 
-        <div className="instructions">
-          <h2>How to Use</h2>
-          <ul>
-            <li><strong>Register a Course:</strong> Fill out the registration form to enroll in a course</li>
-            <li><strong>Available Courses:</strong> View all courses offered with details</li>
-            <li><strong>Enrolled Students:</strong> Admins can view list of all enrolled students</li>
-          </ul>
+        <div className="categories-section">
+          <h2 className="section-title">Shop by Categories</h2>
+          <div className="button-grid">
+            <div className="nav-card" onClick={() => navigate('/available-courses')}>
+              <div className="card-icon">🛋️</div>
+              <h3>All Products</h3>
+              <p>Browse our entire collection</p>
+            </div>
+            
+            <div className="nav-card" onClick={() => navigate('/cart')}>
+              <div className="card-icon">🛒</div>
+              <h3>Shopping Cart</h3>
+              <p>View your selected items</p>
+            </div>
+            
+            {isAdmin && (
+              <div className="nav-card admin-card" onClick={() => navigate('/admin-courses')}>
+                <div className="card-icon">⚙️</div>
+                <h3>Manage Products</h3>
+                <p>Add, edit or remove products (Admin Only)</p>
+              </div>
+            )}
+          </div>
+        </div>
+
+        <div className="features-section">
+          <h2 className="section-title">Why Shop with Us?</h2>
+          <div className="features-grid">
+            <div className="feature-card">
+              <div className="feature-icon">🚚</div>
+              <h3>Fast Delivery</h3>
+              <p>Quick and reliable shipping to your doorstep</p>
+            </div>
+            <div className="feature-card">
+              <div className="feature-icon">🛡️</div>
+              <h3>Secure Payment</h3>
+              <p>100% safe and secure transactions</p>
+            </div>
+            <div className="feature-card">
+              <div className="feature-icon">👍</div>
+              <h3>Quality Products</h3>
+              <p>Authentic products from trusted sellers</p>
+            </div>
+            <div className="feature-card">
+              <div className="feature-icon">📞</div>
+              <h3>24/7 Support</h3>
+              <p>Customer support always ready to help</p>
+            </div>
+          </div>
         </div>
       </main>
     </div>

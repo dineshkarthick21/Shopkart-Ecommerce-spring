@@ -1,6 +1,6 @@
 .admin-courses-container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #f1f3f6;
 }
 
 .admin-content {
@@ -10,15 +10,19 @@
 }
 
 .admin-content h1 {
-  color: white;
+  color: #212121;
   text-align: center;
   margin-bottom: 40px;
   font-size: 2.5em;
+  background: linear-gradient(135deg, #2874f0 0%, #ff9800 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .message {
   padding: 15px;
-  border-radius: 8px;
+  border-radius: 4px;
   margin-bottom: 20px;
   text-align: center;
   font-weight: 600;
@@ -39,14 +43,15 @@
 .add-course-form {
   background: white;
   padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   margin-bottom: 40px;
 }
 
 .add-course-form h2 {
   margin-bottom: 25px;
-  color: #764ba2;
+  color: #2874f0;
+  font-weight: 600;
 }
 
 .form-row {
@@ -62,7 +67,7 @@
 .form-group label {
   display: block;
   margin-bottom: 8px;
-  color: #333;
+  color: #212121;
   font-weight: 600;
 }
 
@@ -70,34 +75,48 @@
 .form-group textarea {
   width: 100%;
   padding: 12px;
-  border: 2px solid #e1e8ed;
-  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
   font-size: 1em;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #667eea;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  border-color: #2874f0;
+  box-shadow: 0 0 0 2px rgba(40, 116, 240, 0.1);
+}
+
+.photo-preview {
+  margin-top: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  max-width: 300px;
+}
+
+.photo-preview img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .add-btn {
   width: 100%;
   padding: 15px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #2874f0;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 2px;
   font-size: 1.1em;
   font-weight: 600;
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: background 0.2s;
 }
 
 .add-btn:hover {
-  transform: translateY(-2px);
+  background: #1f5bb7;
 }
 
 .add-btn:disabled {
@@ -108,31 +127,33 @@
 .courses-list {
   background: white;
   padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .courses-list h2 {
   margin-bottom: 25px;
-  color: #764ba2;
+  color: #212121;
+  font-weight: 600;
 }
 
 .courses-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 25px;
+  gap: 20px;
 }
 
 .course-card {
-  border: 2px solid #e1e8ed;
-  border-radius: 12px;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
   overflow: hidden;
-  transition: all 0.3s;
+  transition: all 0.2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
 }
 
 .course-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .course-card img {
@@ -147,18 +168,19 @@
 
 .course-info h3 {
   margin-bottom: 10px;
-  color: #333;
-  font-size: 1.3em;
+  color: #212121;
+  font-size: 1.2em;
+  font-weight: 600;
 }
 
 .course-info .trainer {
-  color: #666;
+  color: #878787;
   font-size: 0.95em;
   margin-bottom: 10px;
 }
 
 .course-info .description {
-  color: #555;
+  color: #212121;
   font-size: 0.9em;
   margin-bottom: 15px;
   line-height: 1.5;
@@ -169,35 +191,35 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
-  border-top: 1px solid #e1e8ed;
+  border-top: 1px solid #f0f0f0;
   margin-bottom: 15px;
 }
 
 .course-meta .duration {
-  color: #666;
+  color: #878787;
   font-size: 0.9em;
 }
 
 .course-meta .price {
-  color: #2ecc71;
+  color: #212121;
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 .delete-btn {
   width: 100%;
   padding: 10px;
-  background: #e74c3c;
+  background: #ff3f6c;
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 2px;
   cursor: pointer;
   font-weight: 600;
-  transition: background 0.3s;
+  transition: background 0.2s;
 }
 
 .delete-btn:hover {
-  background: #c0392b;
+  background: #e6365f;
 }
 
 @media (max-width: 768px) {
