@@ -18,7 +18,7 @@ import com.example.Course.Registration.Project.model.Users;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:5174", "https://shopkart-enqf.onrender.com"}, allowCredentials = "true")
+@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:5174", "https://shopkart-enqf.onrender.com", "https://shopkart-frontend-clone.onrender.com"}, allowCredentials = "true")
 public class SignUpController {
 
     @Autowired

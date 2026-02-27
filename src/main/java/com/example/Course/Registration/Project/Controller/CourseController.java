@@ -14,7 +14,7 @@ import com.example.Course.Registration.Project.Service.CourseService;
 import com.example.Course.Registration.Project.model.Course;
 
 @RestController
-@CrossOrigin(origins = {"http://127.0.0.1:5500", "http://localhost:5173", "http://localhost:5174", "https://shopkart-enqf.onrender.com"})
+@CrossOrigin(origins = {"http://127.0.0.1:5500", "http://localhost:5173", "http://localhost:5174", "https://shopkart-enqf.onrender.com", "https://shopkart-frontend-clone.onrender.com"})
 public class CourseController {
 
     @Autowired

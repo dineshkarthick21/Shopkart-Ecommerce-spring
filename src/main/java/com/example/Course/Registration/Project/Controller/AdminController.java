@@ -20,7 +20,7 @@ import com.example.Course.Registration.Project.model.Users;
 
 @RestController
 @RequestMapping("/admin")
-@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:5174", "https://shopkart-enqf.onrender.com"})
+@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:5174", "https://shopkart-enqf.onrender.com", "https://shopkart-frontend-clone.onrender.com"})
 public class AdminController {
 
     @Autowired

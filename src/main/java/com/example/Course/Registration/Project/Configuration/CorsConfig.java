@@ -20,6 +20,7 @@ public class CorsConfig {
             "http://localhost:5174", 
             "http://localhost:3000",
             "https://shopkart-enqf.onrender.com",
+            "https://shopkart-frontend-clone.onrender.com",
             "https://*.onrender.com" // Allow all Render subdomains
         ));
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"));
