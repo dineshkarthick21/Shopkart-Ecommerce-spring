@@ -1,6 +1,5 @@
 // API Configuration
 // This file centralizes all API endpoint configurations
-
 // Get the base URL from environment variables
 // In development: http://localhost:8080
 // In production: Your deployed backend URL from .env.production
@@ -12,7 +11,7 @@ export const API_ENDPOINTS = {
   LOGIN: `${API_BASE_URL}/login`,
   LOGOUT: `${API_BASE_URL}/logout`,
   SIGNUP: `${API_BASE_URL}/api/signup`,
-  
+
   // Courses/Products
   COURSES: `${API_BASE_URL}/api/courses`,
   ADMIN_COURSES: `${API_BASE_URL}/admin/courses`,
