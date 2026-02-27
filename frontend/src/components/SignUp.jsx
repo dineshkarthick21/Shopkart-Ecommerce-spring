@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
+import API_ENDPOINTS from '../config/apiConfig';
 import '../styles/SignUp.css';
 
 const SignUp = () => {
@@ -65,7 +66,7 @@ const SignUp = () => {
       };
 
       const response = await axios.post(
-        'http://localhost:8080/api/signup',
+        API_ENDPOINTS.SIGNUP,
         signupData,
         {
           headers: {

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import API_ENDPOINTS from '../config/apiConfig';
 import Header from './Header';
 import '../styles/Register.css';
 
@@ -40,7 +41,7 @@ const Register = () => {
     
     try {
       const response = await axios.post(
-        'http://localhost:8080/courses/register',
+        API_ENDPOINTS.REGISTER,
         formData,
         {
           headers: {

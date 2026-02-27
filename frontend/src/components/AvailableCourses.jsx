@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import API_ENDPOINTS from '../config/apiConfig';
 import Header from './Header';
 import '../styles/AvailableCourses.css';
 
@@ -20,7 +21,7 @@ const AvailableCourses = () => {
 
   const fetchCourses = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/courses', {
+      const response = await axios.get(API_ENDPOINTS.COURSES, {
         withCredentials: true
       });
       setCourses(response.data);

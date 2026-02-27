@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import API_ENDPOINTS from '../config/apiConfig';
 import productsData from '../data/homeAppliances.json';
 
 const BulkProductImport = ({ onComplete }) => {
@@ -19,7 +20,7 @@ const BulkProductImport = ({ onComplete }) => {
 
     for (let i = 0; i < productsData.length; i++) {
       try {
-        await axios.post('http://localhost:8080/admin/courses/add', productsData[i]);
+        await axios.post(API_ENDPOINTS.ADMIN_COURSES_ADD, productsData[i]);
         successCount++;
         setProgress({ current: i + 1, total: productsData.length });
         setResults({ success: successCount, failed: failedCount });

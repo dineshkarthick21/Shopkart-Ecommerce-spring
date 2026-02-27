@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
+import API_ENDPOINTS from '../config/apiConfig';
 import '../styles/Login.css';
 
 const Login = ({ onLogin }) => {
@@ -38,7 +39,7 @@ const Login = ({ onLogin }) => {
       loginFormData.append('password', formData.password);
 
       const response = await axios.post(
-        'http://localhost:8080/login',
+        API_ENDPOINTS.LOGIN,
         loginFormData,
         {
           headers: {

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import API_ENDPOINTS from '../config/apiConfig';
 import Header from './Header';
 import BulkProductImport from './BulkProductImport';
 import '../styles/AdminCourses.css';
@@ -25,7 +26,7 @@ const AdminCourses = () => {
 
   const fetchCourses = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/admin/courses');
+      const response = await axios.get(API_ENDPOINTS.ADMIN_COURSES);
       setCourses(response.data);
     } catch (error) {
       console.error('Error fetching courses:', error);
@@ -69,7 +70,7 @@ const AdminCourses = () => {
         });
       }
 
-      await axios.post('http://localhost:8080/admin/courses/add', {
+      await axios.post(API_ENDPOINTS.ADMIN_COURSES_ADD, {
         ...formData,
         photoUrl: imageUrl,
         durationInWeeks: parseInt(formData.durationInWeeks),
@@ -98,7 +99,7 @@ const AdminCourses = () => {
   const handleDelete = async (courseId) => {
     if (window.confirm('Are you sure you want to delete this course?')) {
       try {
-        await axios.delete(`http://localhost:8080/admin/courses/${courseId}`);
+        await axios.delete(API_ENDPOINTS.ADMIN_COURSES_DELETE(courseId));
         setMessage({ type: 'success', text: 'Course deleted successfully!' });
         fetchCourses();
       } catch (error) {

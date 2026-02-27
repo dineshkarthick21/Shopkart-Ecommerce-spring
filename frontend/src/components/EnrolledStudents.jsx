@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import API_ENDPOINTS from '../config/apiConfig';
 import Header from './Header';
 import '../styles/EnrolledStudents.css';
 
@@ -16,7 +17,7 @@ const EnrolledStudents = () => {
 
   const fetchEnrolledStudents = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/admin/courses/enrolled', {
+      const response = await axios.get(API_ENDPOINTS.ADMIN_ENROLLED, {
         withCredentials: true
       });
       setStudents(response.data);

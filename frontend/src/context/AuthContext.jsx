@@ -1,4 +1,5 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
+import API_ENDPOINTS from '../config/apiConfig';
 
 const AuthContext = createContext(null);
 
@@ -26,7 +27,7 @@ export const AuthProvider = ({ children }) => {
 
   const logout = async () => {
     try {
-      await fetch('http://localhost:8080/logout', {
+      await fetch(API_ENDPOINTS.LOGOUT, {
         method: 'POST',
         credentials: 'include',
       });
