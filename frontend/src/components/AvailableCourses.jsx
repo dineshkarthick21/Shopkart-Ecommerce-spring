@@ -24,10 +24,14 @@ const AvailableCourses = () => {
       const response = await axios.get(API_ENDPOINTS.COURSES, {
         withCredentials: true
       });
-      setCourses(response.data);
+      // Ensure response.data is an array
+      const coursesData = Array.isArray(response.data) ? response.data : [];
+      setCourses(coursesData);
+      console.log('Fetched courses:', coursesData);
     } catch (error) {
       setError('Failed to load products. Please try again.');
       console.error('Error fetching products:', error);
+      console.error('Error details:', error.response?.data || error.message);
     } finally {
       setLoading(false);
     }

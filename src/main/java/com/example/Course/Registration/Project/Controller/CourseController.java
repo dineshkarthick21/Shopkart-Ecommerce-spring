@@ -8,13 +8,15 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.Course.Registration.Project.Service.CourseService;
 import com.example.Course.Registration.Project.model.Course;
 
 @RestController
-@CrossOrigin(origins = {"http://127.0.0.1:5500", "http://localhost:5173", "http://localhost:5174", "https://shopkart-enqf.onrender.com", "https://shopkart-frontend-clone.onrender.com"})
+@RequestMapping("/api")
+@CrossOrigin(origins = {"http://127.0.0.1:5500", "http://localhost:5173", "http://localhost:5174", "https://shopkart-enqf.onrender.com", "https://shopkart-frontend-clone.onrender.com"}, allowCredentials = "true")
 public class CourseController {
 
     @Autowired
@@ -27,7 +29,7 @@ public class CourseController {
 
 
 
-        @PostMapping("courses/register")
+        @PostMapping("/register")
     public String enrollStudent(@RequestBody CourseRegistrationRequest request){
             courseService.enrolledStudent(request.getName(), request.getEmailId(), request.getCourseName());
             return "Congratulations "+request.getName() +" Enrollment Sucessful "+request.getCourseName();
